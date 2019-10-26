@@ -64,4 +64,11 @@
   width: 200rpx;
   height: 200rpx;
   margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.upload_img {
+  margin: 0 auto;
+  margin-top: 40rpx;
+  width: 236rpx;
 }

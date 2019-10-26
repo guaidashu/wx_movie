@@ -5,11 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    userInfo: {}
   },
 
   onGotUserInfo: function(event) {
     console.log(event);
+    this.setData({
+      userInfo: event.detail.userInfo
+    });
   },
 
   /**

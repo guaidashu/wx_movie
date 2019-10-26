@@ -4,3 +4,9 @@
 
 <button open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
 
+<view>
+  <view>姓名：{{userInfo.nickName}} </view>
+  <view>国家：{{userInfo.country}} </view>
+  <view>省份：{{userInfo.province}} </view>
+  <view>城市：{{userInfo.city}} </view>
+</view>

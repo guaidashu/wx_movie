@@ -124,7 +124,7 @@ Page({
     this.setData({
       movieid: options
     });
-    this.getDetail({ movieid: 3097572})
+    this.getDetail(options);
   },
 
   /**

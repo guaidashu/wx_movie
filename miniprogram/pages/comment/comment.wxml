@@ -29,14 +29,22 @@
 
   <view class="movie_summary">{{detail.summary}}</view>
 
-  <van-field value="{{ content }}" placeholder="写一些评价吧" border="{{ false }}" bind:change="onContentChange" />
-  <van-rate value="{{ score }}" bind:change="onScoreChange" />
-  <view></view>
-  <van-button type="primary" bindtap="uploadImg">上传图片</van-button>
+  <view style="margin-top: 40rpx;">
+    <van-field value="{{ content }}" placeholder="写一些评价吧" border="{{ false }}" bind:change="onContentChange" />
+  </view>
+  <view style="margin-top: 40rpx;">
+    <van-rate value="{{ score }}" bind:change="onScoreChange" />
+  </view>
+
+  <view class="upload_img">
+    <van-button type="primary" bindtap="uploadImg">上传图片</van-button>
+  </view>
 
   <view>
     <image class="comment_image" wx:for="{{images}}" wx:key="{{index}}" src="{{item}}"></image>
   </view>
 
-  <van-button type="danger" size="large" bindtap="submit">上传评价</van-button>
+  <view style="margin-top: 40rpx;">
+    <van-button type="danger" size="large" bindtap="submit">上传评价</van-button>
+  </view>
 </view>

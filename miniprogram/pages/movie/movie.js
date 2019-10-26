@@ -11,6 +11,12 @@ Page({
     movieList: [],
   },
 
+  gotoComment: function(event) {
+    wx.navigateTo({
+      url: `../comment/comment?movieid=${event.target.dataset.movieid}`,
+    })
+  },
+
   getData: function() {
     wx.cloud.callFunction({
       name: 'movielist',

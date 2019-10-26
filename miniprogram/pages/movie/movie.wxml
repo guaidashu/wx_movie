@@ -7,6 +7,7 @@
       <text wx:for="{{item.casts}}" wx:key="{{index}}">{{item.name}} </text>
     </view>
 
-    <view>{{item.year}}</view>
+    <view>年份：{{item.year}}</view>
   </view>
+  <button class="movie_comment" bindtap="gotoComment" data-movieid="{{item.id}}">评价</button>
 </view>

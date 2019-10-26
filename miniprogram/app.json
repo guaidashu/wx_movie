@@ -1,11 +1,12 @@
 {
   "pages": [
     "pages/movie/movie",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/comment/comment"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "入门小程序",
     "navigationBarTextStyle": "black"
   },
